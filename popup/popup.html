@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Summarizer</h1>
+    <p>Select text on any webpage, right-click, and choose "Summarize with ChatGPT" to get a summary.</p>
+    
+    <div class="api-key-section">
+      <h2>OpenAI API Key</h2>
+      <input type="password" id="apiKeyInput" placeholder="Enter your OpenAI API key">
+      <button id="saveApiKey">Save</button>
+      <div id="status"></div>
+    </div>
+    
+    <div class="instructions">
+      <h2>How to use:</h2>
+      <ol>
+        <li>Enter your OpenAI API key above</li>
+        <li>Select text on any webpage</li>
+        <li>Right-click and select "Summarize with ChatGPT"</li>
+        <li>View the summary in the popup</li>
+      </ol>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
